@@ -1,14 +1,27 @@
 package org.example;
 
-import org.example.animal.Person;
+class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void hello() {
+        System.out.println("hello");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-    Person person = new Person();
+        Person person = new Person("h662", 20);
 
-    person.name = "박진희";
-    person.age = 18;
+        person.hello();
 
-    person.hello();
+        if(true) {
+            int a = 10;
+        }
     }
 }
